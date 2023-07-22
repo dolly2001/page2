@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html, body{
+    height:100%;
+    width:100%;
+    font-family:'Roboto', sans-serif;
+    background:#f2f3f5;
+} 
+
+.dada{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(84, 70, 65);
+    position: relative;
+}
+
+#papa{
+    height: 70%;
+    width: 70%;
+    background-color: rgb(217, 179, 165);
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 210px;
+    display: flex;
+}
+
+#badi_aulaad{
+    height: 100%;
+    width: 40%;
+    background-color: #f2f3f5;
+    position: relative;
+}
+
+#choti_aulaad{
+    height: 100%;
+    width: 60%;
+    background-color: #00359e;
+    display: flex;
+}
+
+#jameen{
+    display: flex;
+    background-color: black;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 15px;
+}
+
+#jameen img{
+    height: 25px;
+}
+
+#baccha1{
+    width: 50%;
+    height: 50%;
+    /* background-color: palevioletred; */
+    background-image: url(https://cdn.pixabay.com/photo/2018/05/28/17/04/roses-3436439_640.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+#baccha2{
+    width: 50%;
+    height: 50%;
+    /* background-color: orange; */
+    background-image: url(https://cdn.pixabay.com/photo/2013/02/20/11/30/autumn-83761_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.center_text{
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.center_text h1{
+    font-size: 50px;
+    color: black;
+    font-weight: 900;
+}
+
+.center_text p{
+    margin-top: 5px;
+    font-size: 20px;
+    opacity: 0.5;
+    color: black;
+    font-weight: 900;
+}
+
+.center_text h2{
+    color: #000;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+@media(max-width: 500px) {
+    .dada{
+        flex-direction: column;
+    }
+    .dada #papa #badi_aulaad{
+        width: 100%;
+    }
+
+    .dada #papa #choti_aulaad{
+        width: 100%;
+    }
+}
